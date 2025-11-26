@@ -2,8 +2,6 @@
 
 **AI-Powered Visual Inspection System for Manufacturing Excellence**
 
-*Combining LinkedIn's trending topic of "AI-powered personal branding" with real-world manufacturing quality control challenges*
-
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/VineshThota/new-repo)](https://github.com/VineshThota/new-repo/issues)
