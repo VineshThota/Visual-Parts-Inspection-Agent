@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataClean AI Copilot - Automated Data Quality Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-robot"></i> DataClean AI Copilot</h1>
+            <p>Your AI-Powered Data Quality Assistant</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <h2>Upload Your Dataset</h2>
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag & drop your CSV file here or click to browse</p>
+                    <input type="file" id="fileInput" accept=".csv" hidden>
+                </div>
+            </div>
+
+            <div class="analysis-section" id="analysisSection" style="display: none;">
+                <h2>Data Quality Analysis</h2>
+                <div class="analysis-grid">
+                    <div class="analysis-card">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Issues Detected</h3>
+                        <div id="issuesCount" class="metric">0</div>
+                    </div>
+                    <div class="analysis-card">
+                        <h3><i class="fas fa-chart-line"></i> Data Quality Score</h3>
+                        <div id="qualityScore" class="metric">0%</div>
+                    </div>
+                    <div class="analysis-card">
+                        <h3><i class="fas fa-database"></i> Total Records</h3>
+                        <div id="totalRecords" class="metric">0</div>
+                    </div>
+                </div>
+
+                <div class="issues-list" id="issuesList">
+                    <h3>Detected Issues & AI Recommendations</h3>
+                    <div id="issuesContainer"></div>
+                </div>
+
+                <div class="actions">
+                    <button id="autoCleanBtn" class="btn btn-primary">
+                        <i class="fas fa-magic"></i> Auto-Clean Data
+                    </button>
+                    <button id="downloadBtn" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download Cleaned Data
+                    </button>
+                </div>
+            </div>
+
+            <div class="progress-section" id="progressSection" style="display: none;">
+                <h3>Processing...</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p id="progressText">Analyzing your data...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by AI • Built for Data Professionals • © 2024 DataClean AI Copilot</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
